@@ -1,0 +1,38 @@
+td {
+  border: 1px solid #d6c45d;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  user-select: none;
+  font-weight : bold;
+
+}
+
+.right-border {
+  border-right: 3px solid #d6c45d;
+}
+
+.bottom-border {
+  border-bottom: 3px solid #d6c45d;
+}
+
+.cell-modifiable{
+  cursor: pointer;
+  color: green;
+}
+
+.cell-invalid {
+  background-color: #d89f97c5;
+}
+
+.cell-hinted{
+  color: orange;
+  animation-name: hintAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes hintAnimation {
+  from {background-color: orange;}
+  to {background-color: initial;}
+}
